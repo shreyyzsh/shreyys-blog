@@ -2,10 +2,12 @@ import "./globals.css";
 import Link from "next/link";
 import { Metadata } from "next";
 import { ThemeToggle } from "@/components/theme-toggle";
+import "katex/dist/katex.min.css";
 
 export const metadata: Metadata = {
-  title: "My Blog",
-  description: "A simple static blog",
+  metadataBase: new URL("https://shreyynotes.vercel.app"),
+  title: "Shreyy",
+  description: "Documenting my journey in tech and life.",
 };
 
 export default function RootLayout({

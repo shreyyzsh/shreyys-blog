@@ -4,6 +4,8 @@ import { getAllPosts, getPostBySlug } from "@/lib/posts";
 import { markdownComponents } from "@/lib/markdown";
 import { formatPostMeta } from "@/lib/utils";
 import ReactMarkdown from "react-markdown";
+import remarkMath from "remark-math";
+import rehypeKatex from "rehype-katex";
 
 export function generateStaticParams() {
   return getAllPosts().map((post) => ({
@@ -58,7 +60,11 @@ export default async function Post({
         </header>
 
         <article className="text-[1.0625rem]">
-          <ReactMarkdown components={markdownComponents}>
+          <ReactMarkdown 
+            components={markdownComponents}
+            remarkPlugins={[remarkMath]}
+            rehypePlugins={[rehypeKatex]}
+          >
             {post.content}
           </ReactMarkdown>
         </article>

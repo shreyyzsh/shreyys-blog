@@ -8,7 +8,7 @@ html {
   --muted: #666666;
   --border: #111111;
   --card: #f0efea;
-  --post: #f0efea;
+  --post: #f8f7f4;
 }
 
 html.dark {
@@ -17,7 +17,7 @@ html.dark {
   --muted: #999999;
   --border: #eeeee9;
   --card: #1c1c1a;
-  --post: #1a1a18;
+  --post: #111110;
 }
 
 @theme {

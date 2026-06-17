@@ -1,6 +1,7 @@
 ---
 title: The Intuition Behind "Hello World" of Machine Learning
 date: 2026-06-01
+description: As time moved forward, and as our understanding of the world evolved, we stopped looking at the stars and began reading the universe through data.
 ---
 If there's a superpower humans have chased throughout history, it's the ability to peek into the future. From astrology and tarot cards to omens and prophecies, numerous civilizations searched for ways to know what lay ahead. Time moved forward, and as our understanding of the world evolved, we stopped looking at the stars to look at the data instead. 
 
@@ -11,7 +12,7 @@ Machine learning has become a buzzword in recent decades, and will probably rema
 
 It was first used to predict the height of offspring and then went on to gain popularity before machine learning borrowed it. It's both a statistical algorithm and a machine learning algorithm that has been around for more than 200 years. The literal meaning of the term regression is going backwards, but in statistics it refers to estimating the continuous relationship between two or more variables. It is a type of supervised learning algorithm where labelled datasets are used to train the models. 
 
-![[/images/blog/Pasted%20image%20260601195509.png]]
+![](/images/blog/linear_ai.png)
 
 # Finding Relationships in Data
 Linear Regression works on the assumption that there exists a linear relationship between the input variable x, called the feature, and the output variable y, called the target. It tries to map one or more features to the target variable using an affine function, defined as:
@@ -22,7 +23,7 @@ $$
 
 Here, w is the slope of the line, called the weight, and b is the intercept, called the bias. The weight determines how much sensitive our prediction is to the changes in x, and bias gives us the predicted value when x = 0.
 
-![[/images/blog/Pasted%20image%20260613172709.png]]
+![](/images/blog/linear_line.png)
 
 The red line is our hypothesis trying to predict the price of a house based on the area, and the scattered yellow points are the training examples that we had. Notice how the line doesn't pass through all the yellow points, indicating that our prediction will inevitably contain some error.
 

@@ -12,7 +12,7 @@ export default function Home() {
       {posts.length === 0 ? (
         <p className="m-0 italic text-muted">No posts yet.</p>
       ) : (
-        <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-5">
           {posts.map((post) => (
             <article key={post.slug} className="bg-post p-6">
               {post.cover && (
