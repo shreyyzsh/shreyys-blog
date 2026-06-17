@@ -6,8 +6,25 @@ import "katex/dist/katex.min.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://shreyynotes.vercel.app"),
-  title: "Hi, I'm Shreyy",
-  description: "Notes about Machine Learning, AI, and more",
+
+  title: "Shreyy Notes",
+  description: "Documenting my notes, ideas, and thoughts on technology and life.",
+
+  openGraph: {
+    title: "Shreyy Notes",
+    description: "Documenting my notes, ideas, and thoughts on technology and life.",
+    url: "https://shreyynotes.vercel.app",
+    siteName: "Shreyy Notes",
+    type: "website",
+    images: [
+      {
+        url: "/images/og_image.png",
+        width: 1200,
+        height: 630,
+        alt: "Shreyy Notes",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
