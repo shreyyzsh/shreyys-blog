@@ -1,26 +1,67 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@custom-variant dark (&:where(.dark, .dark *));
+
+html {
+  --bg: #f8f7f4;
+  --fg: #111111;
+  --muted: #666666;
+  --border: #111111;
+  --card: #f0efea;
+  --post: #f0efea;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+html.dark {
+  --bg: #111110;
+  --fg: #eeeee9;
+  --muted: #999999;
+  --border: #eeeee9;
+  --card: #1c1c1a;
+  --post: #1a1a18;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@theme {
+  --font-serif: Georgia, "Times New Roman", Times, serif;
+  --font-mono: ui-monospace, "SF Mono", "Cascadia Mono", Monaco, monospace;
+}
+
+@utility bg-page {
+  background-color: var(--bg);
+}
+
+@utility bg-post {
+  background-color: var(--post);
+}
+
+@utility bg-card {
+  background-color: var(--card);
+}
+
+@utility text-fg {
+  color: var(--fg);
+}
+
+@utility text-muted {
+  color: var(--muted);
+}
+
+@utility border-border {
+  border-color: var(--border);
+}
+
+@layer base {
+  html,
+  body {
+    background-color: var(--bg);
+    color: var(--fg);
   }
-}
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  body {
+    @apply font-serif leading-relaxed antialiased;
+  }
+
+  a {
+    color: var(--fg);
+    @apply underline underline-offset-[3px] hover:decoration-2;
+  }
 }
