@@ -6,8 +6,8 @@ import "katex/dist/katex.min.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://shreyynotes.vercel.app"),
-  title: "Shreyy",
-  description: "Documenting my journey in tech and life.",
+  title: "Hi, I'm Shreyy",
+  description: "Notes about Machine Learning, AI, and more",
 };
 
 export default function RootLayout({
