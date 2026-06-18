@@ -20,12 +20,7 @@ export const metadata: Metadata = {
     siteName: "Shreyy's Blog",
     type: "website",
     images: [
-      {
-        url: "/images/og-image.jpeg",
-        width: 1200,
-        height: 630,
-        alt: "Shreyy's Blog",
-      },
+      "/images/og-image.jpeg"
     ],
   },
 
@@ -34,7 +29,7 @@ export const metadata: Metadata = {
     title: "Hi, I'm Shreyy",
     description: "Documenting my notes and thoughts.",
     images: [
-      "https://shreyynotes.vercel.app/images/og-image.png",
+      "/images/og-image.png",
     ],
   },
 };
