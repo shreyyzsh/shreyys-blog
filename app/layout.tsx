@@ -7,30 +7,23 @@ import "katex/dist/katex.min.css";
 export const metadata: Metadata = {
   metadataBase: new URL("https://shreyynotes.vercel.app"),
 
-  title: {
-    default: "Hi, I'm Shreyy",
-    template: "%s | Hi, I'm Shreyy",
-  },
-
+  title: "Shreyy",
   description: "Documenting my notes and thoughts.",
 
   openGraph: {
     title: "Hi, I'm Shreyy",
     description: "Documenting my notes and thoughts.",
-    siteName: "Shreyy's Blog",
     type: "website",
-    images: [
-      "/images/og-image.jpeg"
-    ],
+    images:
+      "/images/og-image.jpeg",
   },
 
   twitter: {
     card: "summary_large_image",
     title: "Hi, I'm Shreyy",
     description: "Documenting my notes and thoughts.",
-    images: [
-      "/images/og-image.png",
-    ],
+    images:
+      "/images/og-image.jpeg",
   },
 };
 
